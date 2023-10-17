@@ -3,12 +3,166 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="cover"></div>
+    <!--SECTION HEADER-->
+    <div id="cover">
+    <div class="flex-container">
+        <nav>
+            <img src="assets/logo2.png" class="logo2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact form</a></li>
+            </ul>
+        </nav>
+      <div class="first-text">
+         <p>Graphic designer</p>
+         <h1>Welcome!Am Blessing</h1>
+     </div>
+    </div>
+    </div>
+    <!--SECTION ABOUT ME-->
+    <div id="about-me">
+        <div class="flex-container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/lancer.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p>Greetings!I am Blessing Glory Nwakego,a seasoned graphic designer with a fervent passion for transforming ideas into captivating visual experiences.With a creative spirit has holds no boumds, I embark on every roject with the aim of crafting designs that only resonate but also leave a lasting impression.
+                        <br>
+                        My journey in the world of design began approximately two years ago. From the very out-set,i was captivated by the poers of visuals to communicate ideas, ecokeemotions and create meaningful connnections.Over the years, i have honed my skills, staying at the fore-front of design trends and technologies to offer my clients the possible best solutions.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="skills-infill active-tab" id="skills">
+                        <ul>
+                            <li><span>Communication</span><br>understanding project requirements</li>
+                            <li><span>Layout design</span><br>arranging and imputting the right fonts</li>
+                            <li><span>Creativity</span><br>designing originality</li>
+                        </ul>
+                    </div>
+                    <div class="skills-infill" id="experience">
+                        <ul>
+                            <li><span>Logo design</span><br>targets the brand style preference</li>
+                            <li><span>E-commerce store design</span><br>create wireframe and mockup</li>
+                            <li><span>Branding a product launch</span><br>A comprehensive brand identity</li>
+                        </ul>
+                    </div>
+                    <div class="skills-infill" id="education">
+                        <ul>
+                            <li><span>2015</span><br>Graphic Design fundamentals</li>
+                            <li><span>2016</span><br>ALX bootcamp</li>
+                            <li><span>2017</span><br>M.Sc in data technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===================================SECTION SERVICES=====================================================================-->
+    <div id="services">
+        <div class="flex-container">
+            <h1 class="sub-title">My Services </h1>
+            <div class="services-list">
+                <div class="list-within">
+                    <img src="assets/icons8-dribbble-64.png">
+                    <h2>E-commerce design</h2>
+                    <p>The dashboard of the E-commerce design has to be arrenged emlemently placing each direct form on each other to create sliding smooth outlay of the elements</p>
+                    <a href="#">Learn more...</a>
+
+                </div>
+                <div class="list-within">
+                    <img src="assets/adobe1.png" >
+                    <h2>Adobe Photoshop</h2>
+                    <p>This tools uses machine learning to remove unwanted objects or filters while illustrating.</p>
+                    <a href="#">Learn more...</a>
+                </div>
+                <div class="list-within">
+                    <img src="assets/gimp1.png">
+                    <h2>Gimp</h2>
+                    <p>Moves in synchronisation to Photoshop and helps in image retouching, image composition, and imaage authoring.</p>
+                    <a href="#">Learn more...</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================================MY WORK SECTION=====================================================================-->
+    <div id="my-work">
+        <div class="flex-container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+                <img src="assets/work1.jpg" >
+                <div class="layer">
+                    <h3>E-commerce Advert</h3>
+                    <p>Creating a user interface billboard that really advertises and showcase the product's worth.
+                        interface really smashing, available for download
+                    </p>
+                    <a href="#"><img src="assets/com image.png"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/work2.jpg">
+                <div class="layer">
+                <h3>3D-design</h3>
+                <p>Creating a design that looks almost unbelieveable to look exactly unanimated.
+                    interface really smashing, available for download
+                </p>
+                <a href="#"><img src="assets/com image.png"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/work4.jpg">
+                <div class="layer">
+                <h3>deign for app</h3>
+                <p>Creating aplications cover-page that looks really extraordinary with its designs
+                    interface really smashing, available for download
+                </p>
+                <a href="#"><img src="assets/com image.png"></a>
+                </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--====================================CONTACT SECTION================================================================================-->
+    <div class="contact">
+        <div class="flex-container">
+            <div class="row">
+                <div class="contact-let">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p>example@gmail.com</p>
+                  <p>08132456522231</p>
+                  <div class="socialites">
+                    <a href="https://facebook.com"><img src="assets/facebook.png"></a>
+                    <a href="#"><img src="assets/github2.png"></a>
+                    <a href="#"><img src="assets/twitter2.png"></a>
+                    <a href="#"><img src="assets/linkin.png"></a>
+                  </div>
+
+                </div>
+                <div class="contact-right">
+                    <form action=""></form>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

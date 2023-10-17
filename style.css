@@ -1,0 +1,283 @@
+* {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(31, 31, 128);
+    color:beige;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 80%;
+}
+
+#cover{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background: no-repeat;
+}
+
+.flex-container{
+    padding: 10px 10%;
+
+
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo2{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #300103;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+
+nav .suit{
+    width: 500px;
+    height: 600px;
+    border-radius: 30%;
+}
+.first-text{
+    margin-top: 20%;
+    font-size: 35px;
+}
+.first-text h1{
+    font-size: 70px;
+    margin-top: 40px;
+}
+/* ===========ABOUT ME SECTION ========================*/
+
+#about-me{
+    padding: 80px 0;
+    color: #ababab;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 30%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.about-col-2{
+    flex-basis: 65%;
+}
+.about-col-2 h1{
+    color: black;
+    font-size: 65px;
+
+    
+}
+.about-col-2 p{
+    font-size: large;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 55px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #ababab;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.skills-infill ul li{
+     list-style: none;
+     margin: 6px 0;
+     font-size: 16px;
+}
+.skills-infill ul li span{
+    color: #010;
+    font-size: 20px;
+}
+.skills-infill{
+    display: none;
+}
+.skills-infill.active-tab{
+    display: block;
+}
+/*================================ SERVICES SECTION===========================*/
+#services{
+    padding: 30px 0;
+
+}
+.sub-title{
+    color: black;
+    font-size: 90px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    font-size: large;
+}
+.services-list  div{
+    background: blue;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div img{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #010;
+    transform: translateY(-10px);
+
+
+} 
+/*========================== WORK SECTION ================ */
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    font-size: large;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.4),#010);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 45px;
+    text-align: center;
+    font-size: 12px;
+    transition: height 0.25s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.layer a{
+    margin-top: 20px;
+    color: #010;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+
+
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    background-color: #010;
+    padding: 15px 50px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+
+/*=================================CONTACT SECTION=============================================*/
