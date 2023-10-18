@@ -85,11 +85,13 @@ nav .suit{
     font-size: 70px;
     margin-top: 40px;
 }
+
+
 /* ===========ABOUT ME SECTION ========================*/
 
 #about-me{
     padding: 80px 0;
-    color: #ababab;
+    color: black;
 
 }
 
@@ -111,12 +113,13 @@ nav .suit{
 }
 .about-col-2 h1{
     color: black;
-    font-size: 65px;
+    font-size: 35px;
 
     
 }
 .about-col-2 p{
-    font-size: large;
+    font-size: 20px;
+    color: black;
 }
 .tab-titles{
     display: flex;
@@ -124,8 +127,8 @@ nav .suit{
 }
 .tab-links{
     margin-right: 55px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 300;
     cursor: pointer;
     position: relative;
 }
@@ -149,7 +152,7 @@ nav .suit{
 }
 .skills-infill ul li span{
     color: #010;
-    font-size: 20px;
+    font-size: 11px;
 }
 .skills-infill{
     display: none;
@@ -164,7 +167,7 @@ nav .suit{
 }
 .sub-title{
     color: black;
-    font-size: 90px;
+    font-size: 50px;
 }
 .services-list{
     display: grid;
@@ -272,7 +275,7 @@ nav .suit{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    background-color: #010;
+    background-color: black;
     padding: 15px 50px;
     border-radius: 10px;
     color: #fff;
@@ -281,3 +284,124 @@ nav .suit{
 }
 
 /*=================================CONTACT SECTION=============================================*/
+.contact-left{
+    flex-basis: 25%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 8px;
+    color: #010;
+}
+.contact-left p img{
+    margin-right: 12px;
+    font-size: 20px;
+}
+.socialite{
+    margin-top: 30px;
+}
+.socialite a{
+    color: black;
+    display: inline-block;
+    margin-right: 15px;
+}
+.btn.btn2{
+    display: inline-block;
+    background: black;
+}
+.btn.btn3{
+    display: inline-block;
+    background: black;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 15px;
+    background: black;
+    
+}
+form label{
+    color: black;
+}
+/* ====================================================== FOOTER SECTION =============================================================================== */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: black;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/* ======================================================= css for small screens =========================================================================================== */
+nav .image{
+    display: none;
+
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: blue;
+    }
+    .first-text{
+        margin-top: 100%;
+        font-size: 15px;
+    }
+    .first-text h1{
+        font-size: 30px;
+    }
+    nav .image{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: black;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.25s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .image{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 20px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
+    
+}

@@ -14,17 +14,22 @@
     <div class="flex-container">
         <nav>
             <img src="assets/logo2.png" class="logo2">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact form</a></li>
+            <ul id="sidemenu">
+                <li><a href="#cover">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#my-work">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact form</a></li>
+                <img src="assets/cross.png" class="image" onclick="closemenu()">
             </ul>
+            <img src="assets/menu.png" class="image" onclick="openmenu()">
         </nav>
       <div class="first-text">
          <p>Graphic designer</p>
          <h1>Welcome!Am Blessing</h1>
+     </div>
+     <div class="asians">
+     <img src="assets/asia.jpg" class="asia">
      </div>
     </div>
     </div>
@@ -141,27 +146,39 @@
         </div>
     </div>
     <!--====================================CONTACT SECTION================================================================================-->
-    <div class="contact">
+    <div id="contact">
         <div class="flex-container">
             <div class="row">
-                <div class="contact-let">
+                <div class="contact-left">
                   <h1 class="sub-title">Contact Me</h1>
-                  <p>example@gmail.com</p>
-                  <p>08132456522231</p>
+                  <p><img src="assets/message.png">example@gmail.com</p>
+                  <p><img src="assets/call.png">08132456522231</p>
                   <div class="socialites">
                     <a href="https://facebook.com"><img src="assets/facebook.png"></a>
-                    <a href="#"><img src="assets/github2.png"></a>
-                    <a href="#"><img src="assets/twitter2.png"></a>
+                    <a href="#"><img src="assets/github1.png"></a>
+                    <a href="#"><img src="assets/twitter1.png"></a>
                     <a href="#"><img src="assets/linkin.png"></a>
                   </div>
-
+                     <a href="assets/Emmanuel Onyekachi CV.pdf" download  class="btn btn2">CV download</a>
                 </div>
                 <div class="contact-right">
-                    <form action=""></form>
+                    <form action="#">
+                        <label for="myName">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="myEmail">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="myMessage">Message</label>
+                        <textarea name="message" id="message" cols="15" rows="6" required></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
                 </div>
+
             </div>
             
         </div>
+    </div>
+    <div class="copyright">
+        <p>Made by &copy; me</p>
     </div>
     <script src="script.js"></script>
 </body>
